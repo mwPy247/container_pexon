@@ -16,5 +16,3 @@
     6. Exit db shell: `exit;`
 2. Exit container: `exit `
 3. Have a look at the logs of the container: `docker logs some-postgres`
-
-Thats it!
