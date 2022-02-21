@@ -9,12 +9,11 @@
 # Interact with the container
 1. Enter the shell of the container `docker exec -it some-postgres bash`
     1. Enter the database shell: `psql -U postgres`
-    2. Verify: `\c test;`
-    3. Create a table: `CREATE TABLE test_table (id INTEGER PRIMARY KEY, value CHARACTER VARYING(30) NOT NULL);`
-    4. Verify that the table was created: `\dt`
-    5. Insert data into test table: `INSERT INTO test_table (id, value) VALUES (1, 'test');`
-    6. Verify: `SELECT * FROM test_table;`
-    7. Exit db shell: `exit;`
+    2. Create a table: `CREATE TABLE test_table (id INTEGER PRIMARY KEY, value CHARACTER VARYING(30) NOT NULL);`
+    3. Verify that the table was created: `\dt`
+    4. Insert data into test table: `INSERT INTO test_table (id, value) VALUES (1, 'test');`
+    5. Verify: `SELECT * FROM test_table;`
+    6. Exit db shell: `exit;`
 2. Exit container: `exit `
 3. Have a look at the logs of the container: `docker logs some-postgres`
 
